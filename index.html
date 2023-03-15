@@ -20,13 +20,13 @@
             </div>
             <div class="payment">
                 <form>
-                    <div class="form-group email">
-                        <label for="owner">Email Adderss</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
                     <div class="form-group" id="card-number-field">
                         <label for="cardNumber">Card Number</label>
                         <input type="text" class="form-control" id="cardNumber">
+                    </div>
+                    <div class="form-group email">
+                        <label for="owner">Email Adderss</label>
+                        <input type="email" class="form-control" id="email">
                     </div>
                     <div class="flexbox">
                     <div class="form-group owner">
@@ -38,9 +38,14 @@
                         <input type="password" class="form-control" id="cvv">
                     </div>
                 </div>
+                <div class="form-group Amount">
+                    <label for="cvv">Amount</label>
+                    <input type="number" required step="any" class="form-control" id="cvv">
+                </div>
+                 <div class="flexbox_space">
                     <div class="form-group" id="expiration-date">
                         <label>Expiration Date</label>
-                        <select>
+                        <select id="month">
 
                             <option value="" selected disabled>Month</option>
                             <option value="01">January</option>
@@ -70,11 +75,12 @@
                             <option value="21"> 2033</option>
                         </select>
                     </div>
-                    <!-- <div class="form-group" id="credit_cards">
-                        <img src="assets/images/visa.jpg" id="visa">
+                    <div class="form-group" id="credit_cards">
+                        <img class="firstPic" src="assets/images/visa.jpg" id="visa">
                         <img src="assets/images/mastercard.jpg" id="mastercard">
-                        <img src="assets/images/amex.jpg" id="amex">
-                    </div> -->
+                        
+                    </div>
+                </div>
                     <div class="form-group" id="pay-now">
                         <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
                     </div>

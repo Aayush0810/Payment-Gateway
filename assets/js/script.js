@@ -29,16 +29,16 @@ $(function() {
             cardNumberField.addClass('has-success');
         }
 
-        // if ($.payform.parseCardType(cardNumber.val()) == 'visa') {
-        //     mastercard.addClass('transparent');
-        //     amex.addClass('transparent');
-        // } else if ($.payform.parseCardType(cardNumber.val()) == 'amex') {
-        //     mastercard.addClass('transparent');
-        //     visa.addClass('transparent');
-        // } else if ($.payform.parseCardType(cardNumber.val()) == 'mastercard') {
-        //     amex.addClass('transparent');
-        //     visa.addClass('transparent');
-        // }
+        if ($.payform.parseCardType(cardNumber.val()) == 'visa') {
+            mastercard.addClass('transparent');
+            amex.addClass('transparent');
+        } else if ($.payform.parseCardType(cardNumber.val()) == 'amex') {
+            mastercard.addClass('transparent');
+            visa.addClass('transparent');
+        } else if ($.payform.parseCardType(cardNumber.val()) == 'mastercard') {
+            amex.addClass('transparent');
+            visa.addClass('transparent');
+        }
     });
 
     confirmButton.click(function(e) {

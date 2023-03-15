@@ -19,7 +19,7 @@
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     color: #4c4e56;
-    font-weight: 700;
+    font-weight:bold;
 }
 
 .creditCardForm .payment {
@@ -33,6 +33,11 @@
 .creditCardForm .payment .form-group {
     /* float: left; */
     margin-bottom: 15px;
+}
+
+.flexbox_space {
+    display: flex;
+    justify-content: space-between;
 }
 
 .creditCardForm .payment .form-control {
@@ -53,22 +58,38 @@
 .creditCardForm .CVV {
     width: 35%;
 }
+
+.creditCardForm .Amount {
+    width: 39%;
+}
+
+.creditCardForm .CVV {
+    width: 35%;
+}
 .flexbox {
     display: flex;
 }
 
 .creditCardForm #card-number-field {
     width: 100%;
+    margin-right: 10px;
 }
 
 .creditCardForm #expiration-date {
-    width: 49%;
+    width: 43%;
+}
+#month {
+    margin-bottom: 10px;
 }
 
 .creditCardForm #credit_cards {
-    width: 50%;
+    width: 30%;
     margin-top: 25px;
     text-align: right;
+}
+
+.firstPic {
+    margin-bottom: 5px;
 }
 
 .creditCardForm #pay-now {
@@ -102,6 +123,9 @@
     }
     .creditCardForm #credit_cards {
         text-align: left;
+    }
+    .creditCardForm #credit_cards {
+        margin-left: 63px;
     }
 }
 
